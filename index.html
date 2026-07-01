@@ -10,7 +10,7 @@
   --primary:#0f2d3a;
   --accent:#c8a85a;
   --bg:#ffffff;
-  --light:#f6f8fa;
+  --light:#f4f7fa;
   --text:#1b1b1b;
 }
 
@@ -79,6 +79,7 @@ nav a:hover{
 .hero p{
   font-size:18px;
   margin-top:10px;
+  color:#555;
 }
 
 /* SECTIONS */
@@ -100,8 +101,26 @@ h2{
   background:white;
 }
 
-ul{
-  margin-left:20px;
+/* REGIÕES */
+.regions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+
+.region{
+  padding:8px 12px;
+  border:1px solid #ddd;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:14px;
+  color:var(--primary);
+}
+
+.region:hover{
+  background:var(--primary);
+  color:white;
 }
 
 /* FORM */
@@ -120,10 +139,11 @@ input, textarea{
 
 button{
   background:var(--primary);
-  color:blue;
+  color:white;
   border:none;
   padding:10px;
   cursor:pointer;
+  border-radius:6px;
 }
 
 button:hover{
@@ -166,18 +186,37 @@ footer{
 
 <section class="section" id="about">
   <h2 data-i18n="about_title">Sobre</h2>
-  <p data-i18n="about_text">
-    Licenciada em Medicina Dentária em Portugal em 2014. Ao longo da sua carreira tem investido continuamente em formação e congressos nacionais e internacionais.
-  </p>
+
+  <div class="card">
+    <p data-i18n="about_text1">
+      Licenciada em Medicina Dentária em Portugal em 2014.
+    </p>
+
+    <p>
+      Mestre em Medicina Dentária. Ao longo da sua carreira, trabalhou em diversas clínicas dentárias em vários países da Europa, investindo continuamente em formação nacional e internacional e participando em congressos científicos.
+    </p>
+
+    <p>
+      Disponível para consultas em:
+    </p>
+
+    <div class="regions">
+      <div class="region">Lisboa (Portugal)</div>
+      <div class="region">Zeeuws-Vlaanderen (Países Baixos)</div>
+      <div class="region">Vlaanderen (Bélgica)</div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="services">
   <h2 data-i18n="services_title">Áreas de atuação</h2>
+
   <div class="card">
     <ul>
+      <li>Medicina Dentária Preventiva</li>
       <li>Dentisteria Restauradora</li>
-      <li>Estética Dentária</li>
-      <li>Endodontia</li>
+      <li>Dentisteria Estética</li>
+      <li>Endodontologia</li>
       <li>Prótese Dentária</li>
       <li>Reabilitação Oral</li>
       <li>Odontopediatria</li>
@@ -189,15 +228,16 @@ footer{
 
 <section class="section" id="contact">
   <h2 data-i18n="contact_title">Contacto</h2>
+
   <div class="card">
-    
+    <p>Para marcação de consulta, pode entrar em contacto através do formulário abaixo:</p>
+
     <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
       <input type="text" name="name" placeholder="Nome" required>
       <input type="email" name="email" placeholder="E-mail" required>
       <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-
   </div>
 </section>
 
@@ -214,7 +254,7 @@ const translations = {
     nav_services:"Áreas",
     nav_contact:"Contacto",
     about_title:"Sobre",
-    about_text:"Licenciada em Medicina Dentária em Portugal em 2014. Ao longo da sua carreira tem investido continuamente em formação e congressos nacionais e internacionais.",
+    about_text1:"Licenciada em Medicina Dentária em Portugal em 2014.",
     services_title:"Áreas de atuação",
     contact_title:"Contacto"
   },
@@ -225,7 +265,7 @@ const translations = {
     nav_services:"Services",
     nav_contact:"Contact",
     about_title:"About",
-    about_text:"Graduated in Dentistry in Portugal in 2014. She has continuously invested in training and international congresses throughout her career.",
+    about_text1:"Graduated in Dentistry in Portugal in 2014.",
     services_title:"Areas of practice",
     contact_title:"Contact"
   },
@@ -236,7 +276,7 @@ const translations = {
     nav_services:"Diensten",
     nav_contact:"Contact",
     about_title:"Over",
-    about_text:"Afgestudeerd in Tandheelkunde in Portugal in 2014. Ze blijft zich voortdurend bijscholen via opleidingen en internationale congressen.",
+    about_text1:"Afgestudeerd in Tandheelkunde in Portugal in 2014.",
     services_title:"Werkgebieden",
     contact_title:"Contact"
   }
