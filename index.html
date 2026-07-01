@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ana Ramos | Médica Dentista</title>
 
 <style>
@@ -24,18 +24,18 @@
 body{
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
 }
 
+/* HEADER */
 header{
   position:sticky;
   top:0;
   background:white;
-  border-bottom:1px solid #eee;
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:14px 20px;
+  border-bottom:1px solid #eee;
 }
 
 .logo{
@@ -58,28 +58,29 @@ nav a:hover{
   border:1px solid #ddd;
   background:white;
   padding:5px 8px;
-  margin-left:5px;
   cursor:pointer;
 }
 
+/* HERO */
 .hero{
-  padding:80px 20px;
+  padding:90px 20px;
   text-align:center;
-  background:var(--light);
+  background:linear-gradient(180deg, #f4f7fa, #ffffff);
 }
 
 .hero h1{
-  font-size:40px;
+  font-size:42px;
   color:var(--primary);
 }
 
 .hero p{
   font-size:18px;
-  margin-top:10px;
+  color:#555;
 }
 
+/* SECTIONS */
 .section{
-  max-width:900px;
+  max-width:950px;
   margin:auto;
   padding:60px 20px;
 }
@@ -90,37 +91,67 @@ h2{
 }
 
 .card{
-  border:1px solid #eee;
-  padding:20px;
-  border-radius:8px;
   background:white;
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.03);
 }
 
-.regions span{
-  display:inline-block;
-  margin:5px;
-  padding:6px 10px;
-  border:1px solid #ddd;
+/* TAGS */
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+
+.tag{
+  padding:6px 12px;
   border-radius:20px;
+  border:1px solid #ddd;
   font-size:13px;
 }
 
+/* GALERIA */
 .gallery{
-  display:flex;
+  display:grid;
+  grid-template-columns:1fr 1fr;
   gap:10px;
-  flex-wrap:wrap;
 }
 
 .gallery img{
   width:100%;
-  max-width:420px;
+  border-radius:10px;
+}
+
+/* FORM */
+form{
+  display:grid;
+  gap:10px;
+}
+
+input, select, textarea{
+  padding:10px;
+  border:1px solid #ccc;
   border-radius:8px;
+  font-size:14px;
 }
 
-ul{
-  margin-left:20px;
+button{
+  background:var(--primary);
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  cursor:pointer;
 }
 
+button:hover{
+  background:var(--accent);
+}
+
+/* FOOTER */
 footer{
   text-align:center;
   padding:20px;
@@ -143,55 +174,57 @@ footer{
   </nav>
 
   <div class="lang">
-    <button onclick="setLang('pt')">PT</button>
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('nl')">NL</button>
+    <button>PT</button>
+    <button>EN</button>
+    <button>NL</button>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Ana Ramos</h1>
   <p>Médica Dentista</p>
 </section>
 
+<!-- ABOUT -->
 <section class="section" id="about">
   <h2>Sobre</h2>
 
   <div class="card">
-
     <p>
-      Formada em Medicina Dentária em Portugal em 2014. Ao longo da sua carreira tem investido continuamente em formação e congressos nacionais e internacionais.
+      Formada em Medicina Dentária em Portugal em 2014. Ao longo da sua carreira, tem investido continuamente em formação pós-graduada e participação em congressos nacionais e internacionais.
     </p>
 
-    <p>
-      Profissionalmente ativa em Portugal (Lisboa), Países Baixos e Bélgica.
+    <p style="margin-top:10px;">
+      Exerce atividade profissional em contexto europeu, com experiência clínica em Portugal, Países Baixos e Bélgica.
     </p>
 
-    <p>
-      Inscrições profissionais:
-      <br>OMD (Ordem dos Médicos Dentistas)
+    <p style="margin-top:10px;">
+      Inscrição profissional:
+      <br>Ordem dos Médicos Dentistas (Portugal)
       <br>RIZIV (Bélgica)
       <br>BIG (Países Baixos)
     </p>
 
-    <div class="regions">
-      <span>Lisboa</span>
-      <span>Zeeuws-Vlaanderen</span>
-      <span>Vlaanderen</span>
+    <div class="tags">
+      <div class="tag">Portugal</div>
+      <div class="tag">Países Baixos</div>
+      <div class="tag">Bélgica</div>
     </div>
   </div>
 </section>
 
+<!-- PHOTOS -->
 <section class="section">
-  <h2>Fotos</h2>
-  <div class="card">
-    <div class="gallery">
-      <img src="foto1.jpg" alt="Foto 1">
-      <img src="foto2.jpg" alt="Foto 2">
-    </div>
+  <h2>Imagens</h2>
+
+  <div class="card gallery">
+    <img src="Microscoop.jpeg" alt="Foto 1">
+    
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section" id="services">
   <h2>Áreas de atuação</h2>
 
@@ -210,28 +243,34 @@ footer{
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="section" id="contact">
   <h2>Contacto</h2>
 
   <div class="card">
     <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+
       <input type="text" name="name" placeholder="Nome" required>
-      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <!-- NOVO: seleção de país -->
+      <select name="country" required>
+        <option value="">Selecionar país / região</option>
+        <option>Portugal (Lisboa)</option>
+        <option>Bélgica (Vlaanderen)</option>
+        <option>Países Baixos (Zeeuws-Vlaanderen)</option>
+      </select>
+
       <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+
+      <button type="submit">Marcar consulta</button>
     </form>
   </div>
 </section>
 
 <footer>
-  © Ana Ramos
+  Ana Ramos — Medicina Dentária
 </footer>
-
-<script>
-function setLang(lang){
-  alert("Tradução pode ser adicionada depois — versão atual em PT base.");
-}
-</script>
 
 </body>
 </html>
