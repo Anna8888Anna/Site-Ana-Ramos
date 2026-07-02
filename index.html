@@ -5,234 +5,371 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Ramos | Médica Dentista</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="header">
-
-    <div class="logo-container">
-        <img src="Logo ASR Tandarts.jpeg" alt="ASR Tandarts" class="header-logo">
-    </div>
-
-    <nav class="nav">
-        <a href="#about" data-i18n="nav_about">Sobre</a>
-        <a href="#services" data-i18n="nav_services">Áreas</a>
-        <a href="#contact" data-i18n="nav_contact">Contacto</a>
-    </nav>
-
-    <div class="language-switcher">
-        <button onclick="setLang('pt')">PT</button>
-        <button onclick="setLang('en')">EN</button>
-        <button onclick="setLang('nl')">NL</button>
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <span class="hero-subtitle" data-i18n="hero_subtitle">
-            Médica Dentista
-        </span>
-
-        <h1 data-i18n="hero_title">
-            Ana Ramos
-        </h1>
-
-        <p data-i18n="hero_text">
-            Cuidados dentários personalizados com uma abordagem moderna,
-            preventiva e centrada no paciente.
-        </p>
-
-        <a href="#contact" class="hero-btn" data-i18n="hero_button">
-            Marcar Contacto
-        </a>
-
-    </div>
-
-    <div class="hero-image">
-
-        <div class="image-frame">
-            <img src="Microscoop.jpeg" alt="Ana Ramos">
-        </div>
-
-    </div>
-
-</section>
-
-<section class="about section" id="about">
-
-    <div class="section-heading">
-        <span>01</span>
-        <h2 data-i18n="about_title">Sobre</h2>
-    </div>
-
-    <div class="about-card">
-
-        <p data-i18n="about_text1">
-            Formada em Medicina Dentária em Portugal em 2014.
-        </p>
-
-        <p data-i18n="about_text2">
-            Exerce atividade profissional em contexto europeu,
-            com experiência em Portugal, Bélgica e Países Baixos.
-        </p>
-
-        <div class="credentials">
-
-            <div class="credential">
-                <strong>OMD</strong>
-                <span>Portugal</span>
-            </div>
-
-            <div class="credential">
-                <strong>RIZIV</strong>
-                <span>Bélgica</span>
-            </div>
-
-            <div class="credential">
-                <strong>BIG</strong>
-                <span>Países Baixos</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="services section" id="services">
-
-    <div class="section-heading">
-        <span>02</span>
-        <h2 data-i18n="services_title">Áreas de Atuação</h2>
-    </div>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <h3>Medicina Dentária Preventiva</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Dentisteria Restauradora</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Dentisteria Estética</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Endodontologia</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Prótese Dentária</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Reabilitação Oral</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Odontopediatria</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Periodontologia</h3>
-        </div>
-
-        <div class="service-card">
-            <h3>Medicina Oral</h3>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="contact section" id="contact">
-
-    <div class="section-heading">
-        <span>03</span>
-        <h2 data-i18n="contact_title">Contacto</h2>
-    </div>
-
-    <div class="contact-card">
-
-        <form
-            action="https://formspree.io/f/xkolqbjk"
-            method="POST"
-            class="contact-form"
-        >
-
-            <input
-                type="text"
-                name="name"
-                placeholder="Nome"
-                required
-            >
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-            >
-
-            <select name="region" required>
-                <option value="">Selecionar região</option>
-                <option>Portugal</option>
-                <option>Bélgica</option>
-                <option>Países Baixos</option>
-            </select>
-
-            <textarea
-                name="message"
-                rows="6"
-                placeholder="Mensagem"
-                required
-            ></textarea>
-
-            <button type="submit" data-i18n="send_button">
-                Enviar Mensagem
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <div class="footer-logos">
-
-        <img
-            src="Logo ASR Tandarts.jpeg"
-            alt="ASR Tandarts"
-        >
-
-        <img
-            src="Logo LijnHoek.png"
-            alt="LijnHoek"
-        >
-
-    </div>
-
-    <p>
-        © 2025 Ana Ramos
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- VARIÁVEIS E CORES DO MOCKUP --- */
+        :root {
+            --primary-bg: #031c27; /* Azul escuro do topo/hero */
+            --secondary-bg: #042433; /* Azul ligeiramente diferente para secções */
+            --light-bg: #ffffff; /* Fundo branco para "Sobre" e "Contacto" */
+            --text-dark: #222222;
+            --text-light: #ffffff;
+            --accent-gold: #c3a36b; /* Dourado elegante dos detalhes */
+            --accent-blue: #0b3d54;
+            --border-color: #e2e8f0;
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* --- CONFIGURAÇÕES GERAIS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- ANIMAÇÕES DE ENTRADA SUAVE --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- CABEÇALHO (HEADER) --- */
+        .header {
+            background-color: var(--primary-bg);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header-logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            position: relative;
+            padding-bottom: 5px;
+            opacity: 0.85;
+        }
+
+        .nav a:hover {
+            opacity: 1;
+            color: var(--accent-gold);
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: var(--transition-smooth);
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+        }
+
+        .language-switcher {
+            display: flex;
+            gap: 8px;
+        }
+
+        .language-switcher button {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .language-switcher button:hover, 
+        .language-switcher button.active {
+            background-color: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: var(--primary-bg);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background-color: var(--primary-bg);
+            min-height: 85vh;
+            padding-top: 120px;
+            padding-bottom: 60px;
+            display: flex;
+            align-items: center;
+            color: var(--text-light);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .hero-content {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .hero-content.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .hero-subtitle {
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .hero-text {
+            font-size: 1.15rem;
+            color: #b4c6d0;
+            max-width: 480px;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-light);
+            border: 1px solid var(--accent-gold);
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: var(--transition-smooth);
+        }
+
+        .hero-btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-bg);
+            box-shadow: 0 10px 20px rgba(195, 163, 107, 0.15);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 1s ease 0.2s, transform 1s ease 0.2s;
+        }
+
+        .hero-image.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .image-frame {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .image-frame:hover img {
+            transform: scale(1.03);
+        }
+
+        /* --- SECÇÃO SOBRE --- */
+        .about {
+            padding: 100px 20px;
+            background-color: var(--light-bg);
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 40px;
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+
+        .about-card {
+            background: #ffffff;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-weight: 400;
+            max-width: 750px;
+        }
+
+        .credentials {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 500px;
+        }
+
+        .credential {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 5px 0;
+        }
+
+        .credential-icon {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .credential strong {
+            font-size: 1.1rem;
+            color: var(--primary-bg);
+            width: 70px;
+        }
+
+        .credential span {
+            color: #718096;
+            font-size: 1rem;
+        }
+
+        /* --- SECÇÃO ÁREAS DE ATUAÇÃO --- */
+        .services {
+            background-color: var(--secondary-bg);
+            color: var(--text-light);
+            padding: 100px 20px;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services .section-title {
+            color: var(--text-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 160px;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+
+        /* Ícone Dinâmico Minimalista em formato de dente em SVG */
+        .service-icon {
+            width: 32px;
+            height: 32px;
