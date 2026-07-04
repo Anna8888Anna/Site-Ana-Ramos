@@ -75,7 +75,7 @@ body {
 }
 
 /* ==========================================================================
-   3. SECÇÃO PRINCIPAL (HERO)
+   3. SECÇÃO PRINCIPAL (HERO) - AJUSTADA
    ========================================================================== */
 .hero {
     display: flex;
@@ -89,16 +89,18 @@ body {
     flex: 1;
 }
 
+/* Texto Médica Dentista ficou 2x maior */
 .hero-content .subtitle {
     color: #dfb76c;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 28px; 
     font-weight: 600;
     margin-bottom: 10px;
 }
 
+/* Nome Ana Ramos ficou 2x mais pequeno */
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 24px; 
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -114,18 +116,24 @@ body {
 }
 
 /* ==========================================================================
-   4. SECÇÃO SOBRE
+   4. SECÇÃO SOBRE - AJUSTADA COM FOTO BEM MAIOR
    ========================================================================== */
 .sobre {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     padding: 80px 8%;
     background-color: #ffffff;
+}
+
+.sobre-text {
+    flex: 1.5;
 }
 
 .sobre-text h2 {
     font-size: 32px;
     margin-bottom: 25px;
     color: #032535;
-    position: relative;
 }
 
 .sobre-text p {
@@ -153,7 +161,7 @@ body {
 }
 
 .sobre-text ul li i {
-    color: #27ae60; /* Verde para os vistos de confirmação */
+    color: #27ae60;
     margin-right: 12px;
 }
 
@@ -166,6 +174,20 @@ body {
     font-size: 14px;
     font-weight: 500;
     border: 1px solid #e2e8f0;
+}
+
+.sobre-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Foto lateral muito maior e com cantos arredondados */
+.sobre-foto-grande {
+    height: 380px;         
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;    
 }
 
 /* ==========================================================================
@@ -218,7 +240,7 @@ body {
 }
 
 /* ==========================================================================
-   6. SECÇÃO CONTACTO E FORMULÁRIO
+   6. SECÇÃO CONTACTO - LOGOS ADICIONADOS E MAIORES
    ========================================================================== */
 .contacto {
     display: flex;
@@ -247,6 +269,21 @@ body {
 .contacto-info p i {
     color: #dfb76c;
     font-size: 18px;
+}
+
+/* Container dos logos ao lado do formulário */
+.contacto-logos-container {
+    display: flex;
+    gap: 40px;            /* Espaço confortável entre os logos */
+    margin-top: 40px;      
+    align-items: center;
+}
+
+/* Logos maiores para destaque na zona de contacto */
+.contacto-logo-medio {
+    height: 120px;         
+    width: auto;
+    object-fit: contain;
 }
 
 .contacto-form {
@@ -305,7 +342,7 @@ body {
 }
 
 /* ==========================================================================
-   7. RODAPÉ (FOOTER) COM LOGOTIPOS CORRIGIDOS
+   7. RODAPÉ (FOOTER) - LOGOS PEQUENOS CONFORME PEDIDO
    ========================================================================== */
 .footer {
     background-color: #021a24;
@@ -318,20 +355,18 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Container que força os 2 logos a ficar lado a lado */
 .footer-logos-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Distância confortável entre os dois logos */
+    gap: 30px;
 }
 
-/* Define as imagens pequenas no rodapé sem distorção */
+/* Logos pequenos mantidos a 45px no rodapé */
 .footer-mini-img {
-    height: 45px;          /* Altura uniforme e discreta */
-    width: auto;           /* Mantém o rácio original */
-    object-fit: contain;   /* Evita cortes na imagem */
-    filter: grayscale(20%) brightness(95%); /* Integra melhor os logos com o fundo */
+    height: 45px;          
+    width: auto;           
+    object-fit: contain;   
 }
 
 .footer-copy {
@@ -356,7 +391,16 @@ body {
     }
     
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 20px;
+    }
+    
+    .hero-content .subtitle {
+        font-size: 22px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
     }
     
     .area-item {
@@ -366,6 +410,11 @@ body {
     .contacto {
         flex-direction: column;
         padding: 50px 5%;
+    }
+    
+    .contacto-logos-container {
+        justify-content: center;
+        margin-bottom: 20px;
     }
     
     .form-group {
@@ -384,69 +433,7 @@ body {
     }
     
     .footer-logos-container {
-        flex-direction: row; /* Mantém lado a lado mesmo em ecrãs muito pequenos */
+        flex-direction: row;
         gap: 20px;
-    }
-    
-    .footer-mini-img {
-        height: 35px; /* Encolhe ligeiramente no telemóvel para caber bem */
-    }
-}
-/* ==========================================================================
-   NOVOS AJUSTES DE TAMANHO E POSICIONAMENTO
-   ========================================================================== */
-
-/* 1. Ajuste de escala no Topo (Hero) */
-.hero-content .subtitle {
-    font-size: 28px; /* Era 14px, ficou 2x maior */
-}
-
-.hero-content h1 {
-    font-size: 24px; /* Era 48px, ficou 2x mais pequeno */
-}
-
-/* 2. Alinhamento e Foto Grande na secção Sobre (4x maior que 45px = 180px) */
-.sobre {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.sobre-image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.sobre-foto-grande {
-    height: 380px;         /* Exatamente 4x maior que os 45px originais */
-    width: auto;
-    object-fit: contain;
-    border-radius: 8px;    /* Suaviza os cantos da imagem */
-}
-
-/* 3. Logos Médios ao lado do Formulário de Contacto */
-.contacto-logos-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;      /* Empurra os logos ligeiramente para baixo das informações */
-    align-items: center;
-}
-
-.contacto-logo-medio {
-    height: 70px;          /* Maior do que os do rodapé (que têm 45px) */
-    width: auto;
-    object-fit: contain;
-}
-
-/* Ajuste de responsividade para telemóveis */
-@media (max-width: 900px) {
-    .sobre {
-        flex-direction: column;
-        text-align: center;
-    }
-    .contacto-logos-container {
-        justify-content: center;
-        margin-bottom: 20px;
     }
 }
