@@ -330,10 +330,10 @@ body {
         gap: 10px;
     }
     .gallery-item {
-        width: 48%;
+        width: 20%;
     }
     .area-item {
-        width: 45%;
+        width: 30%;
     }
     .form-group {
         flex-direction: column;
