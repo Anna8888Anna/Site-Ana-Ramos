@@ -3,372 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Ramos | Médica Dentista</title>
+    <title>ASR Tandarts - Ana Ramos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome voor iconen -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-main">ASR</span>
+            <span class="logo-sub">TANDARTS</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#sobre" class="active">Sobre</a>
+            <a href="#areas">Áreas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="lang-selector">
+            <button class="active">PT</button>
+            <button>EN</button>
+            <button>NL</button>
+        </div>
+    </header>
 
-    <style>
-        /* --- CORES E DESIGN DO MOCKUP --- */
-        :root {
-            --primary-bg: #031c27; /* Azul escuro principal */
-            --secondary-bg: #02141c; /* Azul ainda mais escuro para contraste */
-            --light-bg: #ffffff;
-            --text-dark: #1e293b;
-            --text-light: #ffffff;
-            --text-muted-light: #94a3b8;
-            --accent-gold: #c3a36b; /* Dourado do mockup */
-            --border-color: #cbd5e1;
-            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">MÉDICA DENTISTA</p>
+            <h1>Ana Ramos</h1>
+            <p class="hero-text">Cuidamos do seu sorriso com conhecimento, tecnologia e dedicação.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://placeholder.com" alt="Ana Ramos - Médica Dentista">
+        </div>
+    </section>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+    <!-- GALLERY STRIP -->
+    <section class="gallery-strip">
+        <div class="gallery-item"><img src="https://placeholder.com" alt="Consultório"></div>
+        <div class="gallery-item"><img src="https://placeholder.com" alt="Equipamento"></div>
+        <div class="gallery-item"><img src="https://placeholder.com" alt="Sala de espera"></div>
+        <div class="gallery-item"><img src="https://placeholder.com" alt="Tratamento"></div>
+    </section>
 
-        html {
-            scroll-behavior: smooth;
-        }
+    <!-- SOBRE SECTION -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-text">
+            <h2>Sobre</h2>
+            <p><strong>Formada em Medicina Dentária em Portugal em 2014.</strong></p>
+            <p>Exerce atividade profissional em contexto europeu com experiência em Portugal, Países Baixos e Bélgica.</p>
+            
+            <h3>Inscrição profissional:</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> OMD (Portugal)</li>
+                <li><i class="fas fa-check-circle"></i> RIZIV (Bélgica)</li>
+                <li><i class="fas fa-check-circle"></i> BIG (Países Baixos)</li>
+            </ul>
 
-        body {
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            overflow-x: hidden;
-        }
+            <div class="flags">
+                <span>🇵🇹 Portugal</span>
+                <span>🇳🇱 Países Baixos</span>
+                <span>🇧🇪 Bélgica</span>
+            </div>
+        </div>
+        <div class="sobre-card">
+            <div class="card-logo">
+                <span class="logo-main">ASR</span>
+                <span class="logo-sub">TANDARTS</span>
+            </div>
+        </div>
+    </section>
 
-        /* --- ANIMAÇÃO SUAVE COPIADA DO GRAFISMO --- */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-        }
+    <!-- AREAS DE ATUAÇÃO -->
+    <section id="areas" class="areas">
+        <h2>Áreas de atuação</h2>
+        <div class="areas-grid">
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Medicina Dentária Preventiva</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Dentisteria Restauradora</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-magic"></i>
+                <p>Dentisteria Estética</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Endodontologia</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Prótese Dentária</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-smile"></i>
+                <p>Reabilitação Oral</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-child"></i>
+                <p>Odontopediatria</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Periodontologia</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-lips"></i>
+                <p>Medicina Oral</p>
+            </div>
+        </div>
+    </section>
 
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-info">
+            <h2>Contacto</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Atendimento em Portugal, Bélgica e Países Baixos</p>
+            <p><i class="fas fa-envelope"></i> anaramos.dentista@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +351 912 345 678</p>
+        </div>
+        <div class="contacto-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <select required>
+                    <option value="">Selecionar região</option>
+                    <option value="pt">Portugal</option>
+                    <option value="be">Bélgica</option>
+                    <option value="nl">Países Baixos</option>
+                </select>
+                <textarea placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit">Entrar em contacto</button>
+            </form>
+        </div>
+    </section>
 
-        /* --- CABEÇALHO / MENU --- */
-        .header {
-            background-color: var(--primary-bg);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <span class="logo-main">ASR</span>
+            <span class="logo-sub">TANDARTS</span>
+        </div>
+        <div class="footer-partner">
+            <span>LijnHoek</span>
+            <small>CommV</small>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Ana Ramos | Médica Dentista. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-        .header-logo {
-            height: 45px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .nav {
-            display: flex;
-            gap: 35px;
-        }
-
-        .nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: var(--transition-smooth);
-            position: relative;
-            padding-bottom: 4px;
-        }
-
-        .nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent-gold);
-            transition: var(--transition-smooth);
-        }
-
-        .nav a:hover::after {
-            width: 100%;
-        }
-
-        .nav a:hover {
-            color: var(--accent-gold);
-        }
-
-        .language-switcher {
-            display: flex;
-            gap: 8px;
-        }
-
-        .language-switcher button {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: var(--text-light);
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transition: var(--transition-smooth);
-        }
-
-        .language-switcher button:hover, 
-        .language-switcher button.active {
-            background-color: var(--accent-gold);
-            border-color: var(--accent-gold);
-            color: var(--primary-bg);
-        }
-
-        /* --- HERO (SECÇÃO PRINCIPAL) --- */
-        .hero {
-            background-color: var(--primary-bg);
-            min-height: 85vh;
-            padding: 140px 40px 60px 40px;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .hero-content {
-            max-width: 650px;
-        }
-
-        .hero-subtitle {
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 3px;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        .hero-title {
-            color: var(--text-light);
-            font-size: 4rem;
-            font-weight: 300;
-            line-height: 1.1;
-            margin-bottom: 25px;
-        }
-
-        .hero-text {
-            color: var(--text-muted-light);
-            font-size: 1.15rem;
-            line-height: 1.6;
-            margin-bottom: 35px;
-        }
-
-        .hero-image-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-img {
-            width: 100%;
-            max-width: 480px;
-            border-radius: 12px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-            object-fit: cover;
-            aspect-ratio: 4/3;
-            transition: var(--transition-smooth);
-        }
-
-        /* --- SECÇÃO SOBRE --- */
-        .section {
-            padding: 100px 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 400;
-            margin-bottom: 45px;
-            color: var(--primary-bg);
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 12px;
-        }
-
-        .about-card {
-            background-color: #f8fafc;
-            padding: 45px;
-            border-radius: 16px;
-            border: 1px solid #edf2f7;
-        }
-
-        .about-card p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: var(--text-dark);
-            margin-bottom: 20px;
-        }
-
-        .credentials {
-            display: flex;
-            gap: 20px;
-            margin-top: 35px;
-            flex-wrap: wrap;
-        }
-
-        .credential {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            padding: 12px 24px;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .credential strong {
-            color: var(--accent-gold);
-        }
-
-        /* --- SECÇÃO ÁREAS DE ATUAÇÃO --- */
-        .services-wrapper {
-            background-color: var(--bg-dark-secondary);
-            width: 100%;
-        }
-
-        .services .section-title {
-            color: var(--text-light);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 10px;
-            padding: 35px 20px;
-            text-align: center;
-            transition: var(--transition-smooth);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 160px;
-        }
-
-        .service-card:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--accent-gold);
-            transform: translateY(-5px);
-        }
-
-        .service-icon {
-            width: 36px;
-            height: 36px;
-            margin-bottom: 18px;
-            fill: none;
-            stroke: var(--accent-gold);
-            stroke-width: 1.5;
-        }
-
-        .service-card h3 {
-            color: #f1f5f9;
-            font-size: 0.95rem;
-            font-weight: 400;
-            line-height: 1.4;
-        }
-
-        /* --- CONTACTO --- */
-        .contact {
-            background-color: #f8fafc;
-            max-width: 100%;
-        }
-
-        .contact-inner {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .contact-card {
-            background: #ffffff;
-            padding: 50px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-            border: 1px solid #e2e8f0;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .contact-form input, .contact-form select, .contact-form textarea {
-            width: 100%;
-            padding: 14px 18px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            outline: none;
-        }
-
-        .contact-form button {
-            background-color: var(--primary-bg);
-            color: var(--text-light);
-            border: none;
-            padding: 16px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition-smooth);
-        }
-
-        .contact-form button:hover {
-            background-color: #052d3f;
-        }
-
-        /* --- RODAPÉ --- */
-        .footer {
-            background-color: var(--primary-bg);
-            padding: 50px 40px;
-        }
-
-        .footer-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .footer-logos {
-            display: flex;
-            align-items: center;
-            gap: 40px;
+</body>
+</html>
