@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist - Ana Ramos</title>
+    <link class="stylesheet" href="style.css?v=2">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-sub">Dentistry</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#sobre">About</a>
+            <a href="#areas">Areas of expertise</a>
+            <a href="#contacto">Contact</a>
+        </nav>
+        <div class="lang-selector">
+            <button onclick="location.href='index.html'">PT</button>
+            <button class="active" onclick="location.href='contact_en.html'">EN</button>
+            <button onclick="location.href='contact_nl.html'">NL</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">DENTIST</p> 
+            <h1>Ana Ramos</h1>
+            <p class="hero-text">We care for your smile with knowledge, technology, and dedication.</p>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- SOBRE SECTION -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-text">
+            <h2>About</h2>
+            <p><strong>Graduated in Dentistry in Portugal (2014).</strong></p>
+            <p>Professional experience in Portugal, Belgium, and the Netherlands.</p>
+            
+            <h3>Professional Registration:</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> OMD (Portugal)</li>
+                <li><i class="fas fa-check-circle"></i> RIZIV (Belgium)</li>
+                <li><i class="fas fa-check-circle"></i> BIG (Netherlands)</li>
+            </ul>
+
+            <div class="flags">
+                <span>🇵🇹 Portugal</span>
+                <span>🇧🇪 Belgium</span>
+                <span>🇳🇱 Netherlands</span>
+            </div>
+        </div>
+        <div class="sobre-image-container">
+           <img src="https://githubusercontent.com" alt="Microscope" class="sobre-foto-grande">
+        </div>
+    </section>
+
+    <!-- AREAS DE ACTUAÇÃO -->
+    <section id="areas" class="areas">
+        <h2>Areas of expertise</h2>
+        <div class="areas-grid">
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Preventive Dentistry</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Restorative Dentistry</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-magic"></i>
+                <p>Cosmetic Dentistry</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Endodontics</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Prosthodontics</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-smile"></i>
+                <p>Oral Rehabilitation</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-child"></i>
+                <p>Pediatric Dentistry</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-tooth"></i>
+                <p>Periodontics</p>
+            </div>
+            <div class="area-item">
+                <i class="fas fa-teeth"></i>
+                <p>Oral Medicine</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-info">
+            <h2>Contact Form</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Consultations in Portugal, Belgium, and the Netherlands</p>
+            <div class="contacto-logos-container">
+                <img src="Logo LijnHoek.png" alt="Logo LijnHoek" class="contacto-logo-medio">
+                <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="contacto-logo-medio">
+            </div>
+        </div>
+        <div class="contacto-form">
+            <form action="https://formspree.io" method="POST">
+                <div class="form-group">
+                    <input type="text" name="Name" placeholder="Full name" required>
+                    <input type="email" name="Email" placeholder="Email address" required>
+                </div>
+                <select name="Region" required>
+                    <option value="">Select region</option>
+                    <option value="pt">Portugal (Lisbon)</option>
+                    <option value="be">Belgium (Flanders)</option>
+                    <option value="nl">Netherlands (Zeeuws-Vlaanderen)</option>
+                </select>
+                <textarea name="Message" placeholder="Your message" rows="4" required></textarea>
+                <button type="submit">Get in touch</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logos-container">
+            <img src="Logo LijnHoek.png" alt="Logo LijnHoek" class="footer-mini-img">
+            <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="footer-mini-img">
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2024 Ana Ramos | Dentist. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
