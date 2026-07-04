@@ -328,7 +328,7 @@ body {
 
 /* Define as imagens pequenas no rodapé sem distorção */
 .footer-mini-img {
-    height: 45px;          /* Altura uniforme e discreta */
+    height: 90px;          /* Altura uniforme e discreta */
     width: auto;           /* Mantém o rácio original */
     object-fit: contain;   /* Evita cortes na imagem */
     filter: grayscale(20%) brightness(95%); /* Integra melhor os logos com o fundo */
