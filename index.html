@@ -123,25 +123,23 @@
 
             </div>
         </div>
-        <div class="contacto-form">
-           <!-- Verander de <form> tag naar dit: -->
-<form action="https://formspree.io/f/xkolqbjk" method="POST">
-    <div class="form-group">
-        <!-- O atributo name="___" é obrigatório para que os dados cheguem ao e-mail -->
-        <input type="text" name="Nome" placeholder="Nome" required>
-        <input type="email" name="Email" placeholder="Email" required>
-    </div>
-    <select name="Região" required>
-        <option value="">Selecionar região</option>
-        <option value="pt">Portugal (Lisboa)</option>
-        <option value="be">Bélgica (Vlaanderen)</option>
-        <option value="nl">Países Baixos (Zeeuws-Vlaanderen)</option>
-    </select>
-    <textarea name="Mensagem" placeholder="Mensagem" rows="4" required></textarea>
-    <button type="submit">Entrar em contacto</button>
-</form>
-
+               <div class="contacto-form">
+            <form action="https://formspree.io" method="POST">
+                <div class="form-group">
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                </div>
+                <select name="Região" required>
+                    <option value="">Selecionar região</option>
+                    <option value="pt">Portugal (Lisboa)</option>
+                    <option value="be">Bélgica (Vlaanderen)</option>
+                    <option value="nl">Países Baixos (Zeeuws-Vlaanderen)</option>
+                </select>
+                <textarea name="Mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit">Entrar em contacto</button>
+            </form>
         </div>
+
     </section>
 
     <!-- FOOTER -->
