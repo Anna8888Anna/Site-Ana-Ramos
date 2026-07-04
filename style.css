@@ -419,7 +419,7 @@ body {
 }
 
 .sobre-foto-grande {
-    height: 180px;         /* Exatamente 4x maior que os 45px originais */
+    height: 380px;         /* Exatamente 4x maior que os 45px originais */
     width: auto;
     object-fit: contain;
     border-radius: 8px;    /* Suaviza os cantos da imagem */
