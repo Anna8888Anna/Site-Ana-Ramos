@@ -115,22 +115,30 @@
                 <img src="Logo LijnHoek.png" alt="Logo LijnHoek" class="contacto-logo-medio">
                 <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="contacto-logo-medio">
             </div>
-        </div>
         <div class="contacto-form">
-            <form action="https://formspree.io" method="POST">
-                <div class="form-group">
-                    <input type="text" name="Name" placeholder="Full name" required>
-                    <input type="email" name="Email" placeholder="Email address" required>
-                </div>
-                <select name="Region" required>
-                    <option value="">Select region</option>
-                    <option value="pt">Portugal (Lisbon)</option>
-                    <option value="be">Belgium (Flanders)</option>
-                    <option value="nl">Netherlands (Zeeuws-Vlaanderen)</option>
-                </select>
-                <textarea name="Message" placeholder="Your message" rows="4" required></textarea>
-                <button type="submit">Get in touch</button>
-            </form>
+    <form action="https://formspree.io" method="POST">
+        <div class="form-group">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+        </div>
+        <select name="Region" required>
+            <option value="">Select region</option>
+            <option value="pt">Portugal (Lisbon)</option>
+            <option value="be">Belgium (Vlaanderen)</option>
+            <option value="nl">Netherlands (Zeeuws-Vlaanderen)</option>
+        </select>
+        <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+        
+        <!-- GDPR COMPLIANT (EU HEALTH STANDARDS) -->
+        <div style="margin: 15px 0; text-align: left; font-size: 0.9em; display: flex; align-items: flex-start; gap: 8px;">
+            <input type="checkbox" id="rgpd-en" name="Accept_GDPR" value="Yes" required style="margin-top: 4px; cursor: pointer;">
+            <label for="rgpd-en" style="cursor: pointer; line-height: 1.3;">
+                I accept that my data will be processed to respond to my contact inquiry. I acknowledge that this form should not be used to send confidential medical data.
+            </label>
+        </div>
+
+        <button type="submit">Get in touch</button>
+    </form>
         </div>
     </section>
 
