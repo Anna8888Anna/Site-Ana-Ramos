@@ -107,43 +107,45 @@
     
     </section>
 
-    <!-- CONTACTO SECTION -->
-    <section id="contacto" class="contacto">
-        <div class="contacto-info">
-            <h2>Contact Form</h2>
-            <p><i class="fas fa-map-marker-alt"></i>Appointments in Portugal, Belgium, and the Netherlands</p>
-            <div class="contacto-logos-container">
-                <img src="Logo LijnHoek.png" alt="Logo LijnHoek" class="contacto-logo-medio">
-                <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="contacto-logo-medio">
-            </div>
-        <div class="contacto-form">
-  <div class="contacto-form">
-    <form action="https://formspree.io" method="POST">
-        <div class="form-group">
-            <input type="text" name="Name" placeholder="Name" required>
-            <input type="email" name="Email" placeholder="Email" required>
-        </div>
-        <select name="Region" required>
-            <option value="">Select region</option>
-            <option value="pt">Portugal (Lisbon)</option>
-            <option value="be">Belgium (Vlaanderen)</option>
-            <option value="nl">Netherlands (Zeeuws-Vlaanderen)</option>
-        </select>
-        <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+ <!-- CONTACTO SECTION -->
+<section id="contacto" class="contacto">
+    <div class="contacto-info">
+        <h2>Contact form</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Services in Portugal, Belgium and the Netherlands</p>
         
-        <!-- GDPR COMPLIANT -->
-        <div style="margin: 15px 0; text-align: left; font-size: 0.9em; display: flex; align-items: flex-start; gap: 8px;">
-            <input type="checkbox" id="rgpd-en" name="Accept_GDPR" value="Yes" required style="margin-top: 4px; cursor: pointer; width: auto; min-width: auto;">
-            <label for="rgpd-en" style="cursor: pointer; line-height: 1.3; font-weight: normal;">
-                I accept that my data will be processed to respond to my contact inquiry. I acknowledge that this form should not be used to send confidential medical data.
-            </label>
+        <!-- Logos adicionados ao lado do formulário num tamanho médio (70px) -->
+        <div class="contacto-logos-container">
+            <img src="Logo LijnHoek.png" alt="Logo LijnHoek" class="contacto-logo-medio">
+            <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="contacto-logo-medio">
         </div>
+    </div>
 
-        <button type="submit">Get in touch</button>
-    </form>
-</div>
+    <div class="contacto-form">
+        <form action="https://formspree.io" method="POST">
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+            </div>
+            <select name="Region" required>
+                <option value="">Select region</option>
+                <option value="pt">Portugal (Lisbon)</option>
+                <option value="be">Belgium (Vlaanderen)</option>
+                <option value="nl">Netherlands (Zeeuws-Vlaanderen)</option>
+            </select>
+            <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+            
+            <!-- GDPR COMPLIANT -->
+            <div style="margin: 15px 0; text-align: left; font-size: 0.9em; display: flex; align-items: flex-start; gap: 8px;">
+                <input type="checkbox" id="rgpd-en" name="Accept_GDPR" value="Yes" required style="margin-top: 4px; cursor: pointer; width: auto !important; min-width: auto !important;">
+                <label for="rgpd-en" style="cursor: pointer; line-height: 1.3; font-weight: normal;">
+                    I accept that my data will be processed to respond to my contact inquiry. I acknowledge that this form should not be used to send confidential medical data.
+                </label>
+            </div>
 
-    </section>
+            <button type="submit">Get in touch</button>
+        </form>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer class="footer">
