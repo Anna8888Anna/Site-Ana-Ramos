@@ -115,22 +115,32 @@
                 <img src="Logo ASR Tandarts.jpeg" alt="Logo ASR Tandarts" class="contacto-logo-medio">
             </div>
         </div>
-        <div class="contacto-form">
-            <form action="https://formspree.io" method="POST">
-                <div class="form-group">
-                    <input type="text" name="Naam" placeholder="Naam" required>
-                    <input type="email" name="Email" placeholder="E-mailadres" required>
-                </div>
-                <select name="Regio" required>
-                    <option value="">Selecteer regio</option>
-                    <option value="pt">Portugal (Lissabon)</option>
-                    <option value="be">België (Vlaanderen)</option>
-                    <option value="nl">Nederland (Zeeuws-Vlaanderen)</option>
-                </select>
-                <textarea name="Bericht" placeholder="Uw bericht" rows="4" required></textarea>
-                <button type="submit">Versturen</button>
-            </form>
+      <div class="contacto-form">
+    <form action="https://formspree.io" method="POST">
+        <div class="form-group">
+            <input type="text" name="Naam" placeholder="Naam" required>
+            <input type="email" name="E-mail" placeholder="E-mailadres" required>
         </div>
+        <select name="Regio" required>
+            <option value="">Selecteer regio</option>
+            <option value="pt">Portugal (Lissabon)</option>
+            <option value="be">België (Vlaanderen)</option>
+            <option value="nl">Nederland (Zeeuws-Vlaanderen)</option>
+        </select>
+        <textarea name="Bericht" placeholder="Uw bericht" rows="4" required></textarea>
+        
+        <!-- AVG/GDPR CONFORM (EU MEDISCHE RICHTLIJNEN) -->
+        <div style="margin: 15px 0; text-align: left; font-size: 0.9em; display: flex; align-items: flex-start; gap: 8px;">
+            <input type="checkbox" id="rgpd-nl" name="Accepteer_AVG" value="Ja" required style="margin-top: 4px; cursor: pointer;">
+            <label for="rgpd-nl" style="cursor: pointer; line-height: 1.3;">
+                Ik ga ermee akkoord dat mijn gegevens worden verwerkt om op mijn contactaanvraag te reageren. Ik erken dat dit formulier niet mag worden gebruikt voor het verzenden van vertrouwelijke medische gegevens.
+            </label>
+        </div>
+
+        <button type="submit">Versturen</button>
+    </form>
+</div>
+
     </section>
 
     <!-- FOOTER -->
