@@ -125,22 +125,32 @@
 
             </div>
         </div>
-               <div class="contacto-form">
-            <form action="https://formspree.io" method="POST">
-                <div class="form-group">
-                    <input type="text" name="Nome" placeholder="Nome" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                </div>
-                <select name="Região" required>
-                    <option value="">Selecionar região</option>
-                    <option value="pt">Portugal (Lisboa)</option>
-                    <option value="be">Bélgica (Vlaanderen)</option>
-                    <option value="nl">Países Baixos (Zeeuws-Vlaanderen)</option>
-                </select>
-                <textarea name="Mensagem" placeholder="Mensagem" rows="4" required></textarea>
-                <button type="submit">Entrar em contacto</button>
-            </form>
+              <div class="contacto-form">
+    <!-- CORREÇÃO: Adicione o seu ID do Formspree no lugar de XXXXXXXX -->
+    <form action="https://formspree.io" method="POST">
+        <div class="form-group">
+            <input type="text" name="Nome" placeholder="Nome" required>
+            <input type="email" name="Email" placeholder="Email" required>
         </div>
+        <select name="Região" required>
+            <option value="">Selecionar região</option>
+            <option value="pt">Portugal (Lisboa)</option>
+            <option value="be">Bélgica (Vlaanderen)</option>
+            <option value="nl">Países Baixos (Zeeuws-Vlaanderen)</option>
+        </select>
+        <textarea name="Mensagem" placeholder="Mensagem" rows="4" required></textarea>
+        
+        <!-- RGPD OBRIGATÓRIO (SAÚDE UE) -->
+        <div style="margin: 15px 0; text-align: left; font-size: 0.9em; display: flex; align-items: flex-start; gap: 8px;">
+            <input type="checkbox" id="rgpd-pt" name="Aceita_RGPD" value="Sim" required style="margin-top: 4px; cursor: pointer;">
+            <label for="rgpd-pt" style="cursor: pointer; line-height: 1.3;">
+                Aceito que os meus dados sejam processados para responder ao meu contacto. Reconheço que este formulário não deve ser usado para enviar dados clínicos confidenciais.
+            </label>
+        </div>
+
+        <button type="submit">Entrar em contacto</button>
+    </form>
+</div>
 
     </section>
 
